@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Colorful Bubbles </title>
+<!-- Style sheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" language="JavaScript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+
+})
+</script>
+</head>
+
+<body>
+	<ul id="nav">
+		<li><a href="#intro" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	    <li><a href="#fifth" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+	</ul>
+
+
+<!-- #intro class -->
+	<div id="intro">
+		<div class="story">
+			<div class="float-left">
+				<h2>Some Header Title</h2>
+				<p>This is the first area of my scroll site.
+				</p>
+			</div>
+		</div><!-- end of .story class -->
+	</div><!-- end of #intro tag-->
+
+
+<!-- #second class -->
+	<div id="second">
+		<div class="story">
+			<div class="bg">
+				<div id="one">
+				</div>
+				<div id="two">
+				</div>
+				<div id="three">
+				</div>
+			</div>
+			<div class="float-right">
+				<h2>Some Header Title</h2>
+				<p>This is the second area of my scroll site.
+				</p>
+			</div>
+		</div><!-- end of .story class -->
+	</div><!-- end of #second tag-->
+
+<!-- #third class -->
+	<div id="third">
+		<div class="story">
+			<div class="float-left">
+				<h2>Some Header Title</h2>
+				<p>This is the second area of my scroll site.
+				</p>
+			</div>
+		</div><!-- end of .story class -->
+	</div><!-- end of #third tag-->
+
+<!-- #fifth class -->
+	<div id="fifth">
+		<div class="story"><div class="bg"></div>
+			<div class="float-right">
+				<h2>Some Header Title</h2>
+				<p>This is the second area of my scroll site.
+				</p>
+			</div>
+		</div><!-- end of .story class -->
+	</div><!-- end of #fifth tag-->
+
+</body>
+</html>
